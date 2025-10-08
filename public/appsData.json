@@ -4,8 +4,7 @@
     "title": "Chatly",
     "companyName": "TechNest Inc.",
     "id": 1,
-    "description": "A smart messaging app with AI-powered suggestions and end-to-end encryption.",
-    "size": 48,
+    "description": "hatly is a cutting-edge messaging app designed for seamless communication. It leverages AI-powered suggestions to help users reply quickly and accurately. The app also provides end-to-end encryption to ensure the privacy of all conversations.\n\nWith smart organization features, messages are automatically sorted and prioritized for convenience. Users can translate messages in real-time and collaborate efficiently across teams. Multi-device synchronization ensures continuity across phones, tablets, and desktops.\n\nChatly is ideal for both personal and professional communication, enhancing productivity and social interaction. Its intuitive interface allows users of all ages to navigate effortlessly. Overall, it combines security, efficiency, and innovation in one messaging platform.",
     "reviews": 12034,
     "ratingAvg": 4.6,
     "downloads": 50,
@@ -37,7 +36,7 @@
     "title": "FitLife",
     "companyName": "Wellness Co.",
     "id": 2,
-    "description": "Your personal fitness coach with workout tracking, nutrition plans, and progress analytics.",
+    "description": "Your personal fitness coach with workout tracking, nutrition plans, and progress analytics. FitLife tailors daily workout routines based on your fitness level and goals. It tracks calories, steps, and heart rate while offering meal suggestions to boost results. With motivating challenges and visual progress reports, staying fit has never been easier.",
     "size": 62,
     "reviews": 8543,
     "ratingAvg": 4.4,
@@ -70,7 +69,7 @@
     "title": "SnapPic",
     "companyName": "PixelSoft",
     "id": 3,
-    "description": "Capture, edit, and share stunning photos with creative filters and AI enhancements.",
+    "description": "Capture, edit, and share stunning photos with creative filters and AI enhancements. SnapPic provides professional-grade editing tools, auto-adjustment features, and one-tap filters. It uses AI to enhance lighting, remove blemishes, and suggest creative edits. Share your masterpieces instantly on social platforms and build a following right from the app.",
     "size": 38,
     "reviews": 17892,
     "ratingAvg": 4.7,
@@ -103,7 +102,7 @@
     "title": "NoteFlow",
     "companyName": "CloudBase",
     "id": 4,
-    "description": "Organize your ideas with smart note-taking, reminders, and cloud sync.",
+    "description": "Organize your ideas with smart note-taking, reminders, and cloud sync. NoteFlow uses AI to categorize and summarize your notes, making them easy to find and manage. It supports voice-to-text, collaborative editing, and automatic syncing across all devices. Perfect for students, professionals, and creatives, it keeps your thoughts structured and accessible anytime.",
     "size": 25,
     "reviews": 6932,
     "ratingAvg": 4.3,
@@ -136,7 +135,7 @@
     "title": "Streamix",
     "companyName": "Nova Media",
     "id": 5,
-    "description": "Watch and share short videos from creators around the world.",
+    "description": "Watch and share short videos from creators around the world. Streamix curates trending clips based on your interests and recommends new creators to follow. With powerful editing tools and fast uploads, you can create viral content in minutes. Join communities, engage with fans, and explore a world of endless entertainment.",
     "size": 76,
     "reviews": 24123,
     "ratingAvg": 4.5,
@@ -169,7 +168,7 @@
     "title": "GameHero",
     "companyName": "PlayWorks",
     "id": 6,
-    "description": "Discover and play trending mobile games with daily challenges and leaderboards.",
+    "description": "Discover and play trending mobile games with daily challenges and leaderboards. GameHero curates top games and introduces you to hidden gems based on your interests. Compete with friends, track achievements, and earn rewards for consistent gameplay. Stay updated on new releases and events, all in one gaming hub.",
     "size": 85,
     "reviews": 10234,
     "ratingAvg": 4.2,
@@ -202,7 +201,7 @@
     "title": "Budgetly",
     "companyName": "FinMate",
     "id": 7,
-    "description": "Track expenses, set budgets, and manage your finances effortlessly.",
+    "description": "Track expenses, set budgets, and manage your finances effortlessly. Budgetly offers detailed insights into your spending patterns and suggests ways to save. It supports goal tracking, bill reminders, and customizable categories. Gain control of your money with intuitive charts and easy-to-understand financial summaries.",
     "size": 33,
     "reviews": 4321,
     "ratingAvg": 4.1,
@@ -235,7 +234,7 @@
     "title": "Langify",
     "companyName": "EduCore",
     "id": 8,
-    "description": "Learn new languages with fun lessons, quizzes, and speaking practice.",
+    "description": "DriveSafe is a smart driving assistant that tracks trips, fuel consumption, and driving habits. It provides insights on speed, braking, and efficiency. Users can set safety alerts and monitor performance over time.\n\nThe app offers route optimization, trip logging, and driver score analysis. Notifications warn of sharp turns, hard braking, or fatigue indicators. Integration with vehicle systems ensures accurate and real-time data.\n\nDriveSafe promotes safer and more efficient driving habits. It supports fleet management as well as individual drivers. Overall, it combines technology, analytics, and practical guidance for smarter driving.",
     "size": 59,
     "reviews": 9678,
     "ratingAvg": 4.8,
@@ -268,7 +267,7 @@
     "title": "CookBook+",
     "companyName": "KitchenPro",
     "id": 9,
-    "description": "Explore thousands of recipes, meal plans, and grocery lists tailored for you.",
+    "description": "Explore thousands of recipes, meal plans, and grocery lists tailored for you. CookBook+ learns your preferences and dietary needs to suggest meals you’ll love. Step-by-step instructions, cooking timers, and ingredient substitutions make cooking simple. Save your favorite dishes and create weekly plans with just a few taps.",
     "size": 45,
     "reviews": 5843,
     "ratingAvg": 4.5,
@@ -301,7 +300,7 @@
     "title": "TravelMate",
     "companyName": "Wanderly",
     "id": 10,
-    "description": "Plan trips, find attractions, and manage itineraries with ease.",
+    "description": "Plan trips, find attractions, and manage itineraries with ease. TravelMate suggests personalized routes, must-see destinations, and local tips to enhance your travel experience. It syncs with maps and calendars, keeping your plans organized. From solo adventures to group vacations, TravelMate is your perfect travel companion.",
     "size": 68,
     "reviews": 13456,
     "ratingAvg": 4.6,
@@ -334,7 +333,7 @@
     "title": "Musicify",
     "companyName": "SoundNova",
     "id": 11,
-    "description": "Stream millions of songs and discover new music tailored to your taste.",
+    "description": "Stream millions of songs and discover new music tailored to your taste. Musicify creates smart playlists based on your mood, listening habits, and favorite artists. Enjoy high-quality audio, offline downloads, and curated recommendations. Explore podcasts, live radio, and trending hits — all in one seamless experience.",
     "size": 92,
     "reviews": 29432,
     "ratingAvg": 4.7,
@@ -367,7 +366,7 @@
     "title": "Mindful",
     "companyName": "CalmWorks",
     "id": 12,
-    "description": "Meditation and relaxation sessions to help reduce stress and improve focus.",
+    "description": "Meditation and relaxation sessions to help reduce stress and improve focus. Mindful offers guided sessions, breathing exercises, and sleep aids to improve your mental well-being. Track your mood, build healthy habits, and discover mindfulness techniques that work for you. Start or end your day with peace and clarity.",
     "size": 50,
     "reviews": 5432,
     "ratingAvg": 4.4,
@@ -400,7 +399,7 @@
     "title": "ShopSmart",
     "companyName": "Retailify",
     "id": 13,
-    "description": "Compare prices, get deals, and shop smarter with AI recommendations.",
+    "description": "Compare prices, get deals, and shop smarter with AI recommendations. ShopSmart scans online stores to find the best offers and alerts you about discounts. It tracks price changes and suggests products based on your browsing history. Save money, time, and effort every time you shop online.",
     "size": 64,
     "reviews": 8790,
     "ratingAvg": 4.2,
@@ -433,7 +432,7 @@
     "title": "HealthTrack",
     "companyName": "LifePlus",
     "id": 14,
-    "description": "Monitor your health metrics, heart rate, and daily activity with ease.",
+    "description": "Monitor your health metrics, heart rate, and daily activity with ease. HealthTrack connects with wearable devices to track sleep, calories, and exercise data in real time. It offers personalized health insights and reminders to keep you on track. Stay proactive about your wellness and make informed lifestyle decisions.",
     "size": 40,
     "reviews": 7654,
     "ratingAvg": 4.3,
@@ -466,7 +465,7 @@
     "title": "QuizHub",
     "companyName": "BrainSpark",
     "id": 15,
-    "description": "Test your knowledge with thousands of quizzes across various topics.",
+    "description": "Test your knowledge with thousands of quizzes across various topics. QuizHub challenges you with trivia, puzzles, and timed quizzes to sharpen your mind. Compete with friends, track your progress, and earn badges as you learn. It’s fun, educational, and perfect for learners of all ages.",
     "size": 29,
     "reviews": 4521,
     "ratingAvg": 4.1,
@@ -499,7 +498,7 @@
     "title": "NewsPulse",
     "companyName": "GlobalNet",
     "id": 16,
-    "description": "Stay updated with breaking news, trending stories, and personalized headlines.",
+    "description": "Stay updated with breaking news, trending stories, and personalized headlines. NewsPulse aggregates news from trusted sources worldwide and tailors them to your interests. Receive real-time alerts on major events and follow stories that matter to you. With categories ranging from politics to entertainment, stay informed effortlessly.",
     "size": 34,
     "reviews": 10342,
     "ratingAvg": 4.5,
@@ -532,7 +531,7 @@
     "title": "TaskMaster",
     "companyName": "ProdBoost",
     "id": 17,
-    "description": "Boost productivity with smart task lists, reminders, and goal tracking.",
+    "description": "Boost productivity with smart task lists, reminders, and goal tracking. TaskMaster organizes your workday with intuitive scheduling and progress visualization. It syncs across devices, integrates with calendars, and adapts to your workflow. Whether for personal tasks or team projects, it helps you stay on top of everything.",
     "size": 36,
     "reviews": 6210,
     "ratingAvg": 4.4,
@@ -565,97 +564,97 @@
     "title": "Weatherly",
     "companyName": "SkyTech",
     "id": 18,
-    "description": "Get real-time weather updates, forecasts, and severe weather alerts.",
-    "size": 22,
-    "reviews": 8021,
-    "ratingAvg": 4.6,
-    "downloads": 41,
+    "description": "Get accurate weather forecasts, live radar, and storm alerts anytime. Weatherly offers hourly, daily, and weekly predictions with detailed climate insights. Customize alerts for severe conditions and track real-time weather changes. From local forecasts to global trends, Weatherly keeps you prepared for any situation.",
+    "size": 28,
+    "reviews": 8456,
+    "ratingAvg": 4.5,
+    "downloads": 58,
     "ratings": [
       {
         "name": "1 star",
-        "count": 312
+        "count": 345
       },
       {
         "name": "2 star",
-        "count": 400
+        "count": 456
       },
       {
         "name": "3 star",
-        "count": 950
+        "count": 1000
       },
       {
         "name": "4 star",
-        "count": 2400
+        "count": 2300
       },
       {
         "name": "5 star",
-        "count": 3959
+        "count": 4455
       }
     ]
   },
   {
-    "image": "https://i.ibb.co/Pscq48jF/sddefault.jpg",
-    "title": "CryptoWatch",
-    "companyName": "BlockCore",
+    "image": "https://i.ibb.co/R4wpdP8G/unnamed-2.jpg",
+    "title": "StudyBuddy",
+    "companyName": "LearnEdge",
     "id": 19,
-    "description": "Track cryptocurrency prices, set alerts, and manage your portfolio.",
-    "size": 44,
-    "reviews": 5234,
-    "ratingAvg": 4.2,
+    "description": "Boost your learning with flashcards, quizzes, and collaborative study rooms. StudyBuddy adapts to your progress and suggests new topics to master. Collaborate with peers, track performance, and stay motivated with streaks and rewards. Whether for school or self-improvement, StudyBuddy makes studying more effective and fun.",
+    "size": 52,
+    "reviews": 5321,
+    "ratingAvg": 4.6,
+    "downloads": 39,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 210
+      },
+      {
+        "name": "2 star",
+        "count": 321
+      },
+      {
+        "name": "3 star",
+        "count": 765
+      },
+      {
+        "name": "4 star",
+        "count": 1800
+      },
+      {
+        "name": "5 star",
+        "count": 2225
+      }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/82KGBTH2/download.jpg",
+    "title": "PetPal",
+    "companyName": "FurTech",
+    "id": 20,
+    "description": "Track pet health, set reminders, and connect with vets anytime. PetPal helps you manage vaccinations, feeding schedules, and appointments with ease. It provides care tips, behavior tracking, and a pet diary to monitor growth. Stay organized and give your pets the best care possible.",
+    "size": 31,
+    "reviews": 4123,
+    "ratingAvg": 4.3,
     "downloads": 19,
     "ratings": [
       {
         "name": "1 star",
-        "count": 310
+        "count": 167
       },
       {
         "name": "2 star",
-        "count": 489
-      },
-      {
-        "name": "3 star",
-        "count": 800
-      },
-      {
-        "name": "4 star",
-        "count": 1600
-      },
-      {
-        "name": "5 star",
-        "count": 2035
-      }
-    ]
-  },
-  {
-    "image": "https://i.ibb.co/KZRNMMv/images-2.jpg",
-    "title": "DriveSafe",
-    "companyName": "AutoTech",
-    "id": 20,
-    "description": "A smart driving assistant that tracks your trips and improves driving habits.",
-    "size": 55,
-    "reviews": 4312,
-    "ratingAvg": 4.3,
-    "downloads": 22,
-    "ratings": [
-      {
-        "name": "1 star",
         "count": 234
       },
       {
-        "name": "2 star",
-        "count": 367
-      },
-      {
         "name": "3 star",
-        "count": 700
+        "count": 645
       },
       {
         "name": "4 star",
-        "count": 1500
+        "count": 1450
       },
       {
         "name": "5 star",
-        "count": 1511
+        "count": 1627
       }
     ]
   }
