@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
     return (
-        <div className='bg-base-100 shadow-sm '>
+        <div className='bg-base-100 shadow-sm'>
             <div className="my-1 navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -14,10 +14,10 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link to='/'>Home </Link></li>
-                            <li><Link to='/apps'>Apps </Link></li>
-                            <li><Link to='/installation'>Installation </Link></li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-bold">
+                            <li><NavLink to='/'>Home </NavLink></li>
+                            <li><NavLink to='/all-apps'>Apps </NavLink></li>
+                            <li><NavLink to='/installation'>Installation </NavLink></li>
 
                         </ul>
                     </div>
@@ -31,10 +31,10 @@ const Navbar = () => {
 
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><Link to='/'>Home </Link></li>
-                        <li><Link to='/apps'>Apps </Link></li>
-                        <li><Link to='/installation'>Installation </Link></li>
+                    <ul className="menu menu-horizontal px-1 font-bold">
+                        <li><NavLink to='/'>Home </NavLink></li>
+                        <li><NavLink to='/all-apps'>Apps </NavLink></li>
+                        <li><NavLink to='/installation'>Installation </NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

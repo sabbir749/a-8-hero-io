@@ -8,7 +8,7 @@ const ErrorPage = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className='flex flex-col justify-center items-center gap-2'>
+            <div className='flex flex-col justify-center items-center gap-2 py-10'>
                 <img src={errorImg} alt="" />
                 <h1 className='mt-4 font-bold text-4xl'>Oops, page not found!</h1>
                 <p className='text-gray-600'>The page you are looking for is not available.
