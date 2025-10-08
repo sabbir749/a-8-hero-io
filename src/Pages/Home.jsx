@@ -82,7 +82,7 @@ const Home = () => {
                     </div>
 
                     {/* Trending Apps ||  Dynamic part */}
-                    <div>
+                    <div className='px-6 container'>
                         <div className='text-center mb-[40px]'>
                             <h1 className='font-semibold text-[48px]'>Trending Apps</h1>
                             <p className='text-gray-500'>Explore All Trending Apps on the Market developed by us</p>

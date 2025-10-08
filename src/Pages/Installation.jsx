@@ -58,26 +58,26 @@ const Installation = () => {
             {/* Dynamic part */}
 
 
-
             {
-                sortedItem().map(apps => <div key={apps.id} className='flex justify-between items-center mx-3 rounded-lg mb-3 bg-white p-4'>
-                    <div className='flex gap-4'>
-                        <div className='bg-gray-200 rounded-lg p-3 w-[100px]'>
-                            <img className='w-full' src={apps.image} alt="" />
-                        </div>
-                        <div className='flex  justify-center flex-col'>
-                            <h3 className='font-semibold text-lg'>{apps.title}</h3>
-                            <div className='flex gap-5 mt-4 text-gray-400'>
-                                <div className='flex gap-2 items-center'><img className='w-[17px]' src={download} alt="" /><p>{apps.downloads}M</p></div>
-                                <div className='flex gap-2 items-center'><img className='w-[17px]' src={star} alt="" /><p className='text-orange-600'>{apps.ratingAvg}</p></div>
-                                <div className='flex gap-2 items-center'><p>{apps.size} MB</p></div>
+                sortedItem().length > 0 ?
+                    sortedItem().map(apps => <div key={apps.id} className='flex justify-between items-center mx-3 rounded-lg mb-3 bg-white p-4'>
+                        <div className='flex gap-4'>
+                            <div className='bg-gray-200 rounded-lg p-3 w-[60px]'>
+                                <img className='w-full' src={apps.image} alt="" />
+                            </div>
+                            <div className='flex  justify-center flex-col'>
+                                <h3 className='font-semibold text-lg'>{apps.title}</h3>
+                                <div className='flex gap-5 mt-2 text-gray-400'>
+                                    <div className='flex gap-2 items-center'><img className='w-[17px]' src={download} alt="" /><p>{apps.downloads}M</p></div>
+                                    <div className='flex gap-2 items-center'><img className='w-[17px]' src={star} alt="" /><p className='text-orange-600'>{apps.ratingAvg}</p></div>
+                                    <div className='flex gap-2 items-center'><p>{apps.size} MB</p></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <button onClick={() => handleRemove(apps.id)} className='btn bg-green-600 text-white'>Uninstall</button>
-                    </div>
-                </div>)
+                        <div>
+                            <button onClick={() => handleRemove(apps.id)} className='btn bg-green-600 text-white'>Uninstall</button>
+                        </div>
+                    </div>):<p className='text-3xl font-bold text-center mt-5 text-gray-500'>No Apps Installed</p>
             }
 
 

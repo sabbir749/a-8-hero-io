@@ -33,6 +33,7 @@ const AppDetails = () => {
         else {
             updatedList.push(app)
         }
+        
 
         localStorage.setItem('InstalledApps', JSON.stringify(updatedList))
 

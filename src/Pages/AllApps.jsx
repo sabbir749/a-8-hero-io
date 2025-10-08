@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useApps from '../hooks/useApps';
 import Apps from './Apps';
+import AppsError from './AppsError';
 
 
 const AllApps = () => {
@@ -12,7 +13,7 @@ const AllApps = () => {
 
     const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term)) : apps;
 
-    
+
 
 
 
@@ -43,7 +44,8 @@ const AllApps = () => {
 
             <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
-                    searchedApps.map(appData => <Apps appData={appData} key={appData.id}></Apps>)
+                    searchedApps.length > 0 ?
+                        searchedApps.map(appData => <Apps appData={appData} key={appData.id}></Apps>) : <p className='font-black text-4xl text-center col-span-4'>Not Found</p>
                 }
             </div>
         </div>
