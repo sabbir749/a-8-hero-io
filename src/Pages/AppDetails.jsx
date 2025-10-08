@@ -4,6 +4,7 @@ import useApps from '../hooks/useApps';
 import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 import like from '../assets/icon-review.png'
+import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const AppDetails = () => {
 
@@ -17,14 +18,14 @@ const AppDetails = () => {
     if (loading) {
         return <p>Loading....</p>
     }
-    const { title, image, companyName, reviews, downloads, ratingAvg, size, description } = app
+    const { title, image, companyName, reviews, ratings, downloads, ratingAvg, size, description } = app
 
     const handleInstall = () => {
         const existingApps = JSON.parse(localStorage.getItem('InstalledApps'))
         let updatedList = []
         if (existingApps) {
             const isDuplicate = existingApps.some(p => p.id === app.id)
-            if(isDuplicate){
+            if (isDuplicate) {
                 return alert('Already Installed')
             }
             updatedList = [...existingApps, app]
@@ -36,6 +37,8 @@ const AppDetails = () => {
         localStorage.setItem('InstalledApps', JSON.stringify(updatedList))
 
     }
+  console.log(app);
+  
 
 
     return (
@@ -73,8 +76,26 @@ const AppDetails = () => {
             </div>
 
 
-            <div className='my-10 container mx-auto px-3'>
-                <h1 className='text-2xl font-bold'>Ratings</h1>
+            <div className='my-15 container mx-auto px-3 h-[400px] '>
+                <h1 className='text-2xl font-bold mb-5'>Ratings</h1>
+                <ResponsiveContainer width="100%" height="100%">
+                    <ComposedChart
+                        layout="vertical"
+                        width={500}
+                        height={400}
+                        data={ratings}
+
+                    >
+                        <CartesianGrid stroke="#f5f5f5" />
+                        <XAxis dataKey='count' />
+                        <YAxis dataKey='name' type="category" scale="band" />
+                        <Tooltip />
+                        <Legend />
+                        <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" />
+                        <Bar dataKey="count" barSize={20} fill="#3f07c7" />
+                        <Line dataKey="name" stroke="#ff7300" />
+                    </ComposedChart>
+                </ResponsiveContainer>
             </div>
 
             <div className='my-10 container mx-auto px-3'>

@@ -44,9 +44,9 @@ const Apps = ({ appData }) => {
     return (
 
         <Link to={`/app/${id}`} className='bg-white shadow-xl rounded-lg p-4 hover:scale-102 transition ease-in-out hover:shadow-2xl'>
-            <div className='bg-gray-200 p-5 rounded-lg mb-4'><img className='mx-auto p-4 w-[170px] h-[170px] rounded-full' src={image} alt="" /></div>
-            <h1 className='mt-1 font-semibold'>{title}: {companyName}</h1>
-            <div className='flex justify-between items-center mt-2 p-4'>
+            <div className='bg-gray-200 p-5 rounded-lg mb-3'><img className='mx-auto p-4 w-[170px] h-[170px] rounded-full' src={image} alt="" /></div>
+            <h1 className='mt-2 font-semibold'>{title}: {companyName}</h1>
+            <div className='flex justify-between items-center my-1'>
                 <p className='flex items-center justify-center gap-2 text-green-600'><img className='w-[16px]' src={download} alt="" />{downloads}M</p>
                 <p className='flex items-center justify-center gap-2 text-orange-700'><img className='w-[16px]' src={star} alt="" />{ratingAvg}</p>
             </div>
