@@ -17,7 +17,25 @@ const AppDetails = () => {
     if (loading) {
         return <p>Loading....</p>
     }
-    const { title, image, companyName, reviews, downloads, ratingAvg, size,description } = app
+    const { title, image, companyName, reviews, downloads, ratingAvg, size, description } = app
+
+    const handleInstall = () => {
+        const existingApps = JSON.parse(localStorage.getItem('InstalledApps'))
+        let updatedList = []
+        if (existingApps) {
+            const isDuplicate = existingApps.some(p => p.id === app.id)
+            if(isDuplicate){
+                return alert('Already Installed')
+            }
+            updatedList = [...existingApps, app]
+        }
+        else {
+            updatedList.push(app)
+        }
+
+        localStorage.setItem('InstalledApps', JSON.stringify(updatedList))
+
+    }
 
 
     return (
@@ -50,19 +68,19 @@ const AppDetails = () => {
                         </div>
 
                     </div>
-                    <button className='btn px-7 py-6 bg-green-600 text-white mt-6'>Install Now ({size} MB)</button>
+                    <button onClick={handleInstall} className='btn px-7 py-6 bg-green-600 text-white mt-6'>Install Now ({size} MB)</button>
                 </div>
             </div>
 
 
-<div className='my-10 container mx-auto'>
-    <h1 className='text-2xl font-bold'>Ratings</h1>
-</div>
+            <div className='my-10 container mx-auto px-3'>
+                <h1 className='text-2xl font-bold'>Ratings</h1>
+            </div>
 
-<div className='my-10 container mx-auto'>
-    <h1 className='text-2xl font-bold mb-3'>Description</h1>
-    <p className='text-gray-500'>{description}</p>
-</div>
+            <div className='my-10 container mx-auto px-3'>
+                <h1 className='text-2xl font-bold mb-3'>Description</h1>
+                <p className='text-gray-500'>{description}</p>
+            </div>
 
         </div>
     );
