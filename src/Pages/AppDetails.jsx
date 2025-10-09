@@ -68,7 +68,7 @@ const AppDetails = () => {
                         <p className='flex gap-2'>Developed by <span className='text-blue-700 font-semibold'>{companyName}</span></p>
                     </div>
 
-                    <div className='flex gap-20'>
+                    <div className='flex gap-8 md:gap-20 '>
                         <div>
                             <img src={download} alt="" /><p className='text-gray-500 mt-1'>Downloads</p>
                             <p className='font-black text-3xl mt-1'>{downloads}M </p>

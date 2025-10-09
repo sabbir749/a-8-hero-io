@@ -33,9 +33,9 @@ const Home = () => {
                 <div className='flex flex-col justify-center items-center'>
                     <div className='text-[70px] flex justify-center items-center flex-col leading-[75px] font-bold'>
                         <p>We Build</p>
-                        <p className='text-center'><span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent '>Productive</span> Apps</p>
+                        <p className='text-center'><span className='px-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent '>Productive</span> Apps</p>
                     </div>
-                    <p className='text-gray-500 mt-5 max-w-[800px] text-center mb-10'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+                    <p className='text-gray-500 mt-5 max-w-[800px] text-center mb-10 px-3'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                     <div className='mb-10'>
                         <Link to='https://play.google.com/store/games?hl=en' className='btn border-gray-400 py-6 px-5 transition ease-in-out hover:opacity-90 hover:scale-97'>
                             <img src={playStore} alt="" />

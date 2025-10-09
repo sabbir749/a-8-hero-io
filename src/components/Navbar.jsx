@@ -3,9 +3,10 @@ import { FaGithub } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router';
 import logo from '../assets/logo.png'
 
+
 const Navbar = () => {
     return (
-        <div className='bg-base-100 shadow-sm'>
+        <div className='bg-base-100 border-b-2 border-b-gray-200'>
             <div className="my-1 navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
