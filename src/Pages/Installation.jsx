@@ -3,6 +3,7 @@ import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 import useApps from '../hooks/useApps';
 import Loader from '../components/Loader';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Installation = () => {
 
@@ -36,6 +37,7 @@ const Installation = () => {
         setInstalledAppsList(updatedList)
 
         localStorage.setItem('InstalledApps', JSON.stringify(updatedList))
+        toast("❎ App Uninstalled!")
 
     }
 
@@ -78,10 +80,12 @@ const Installation = () => {
                             </div>
                         </div>
                         <div>
-                            <button onClick={() => handleRemove(apps.id)} className='btn bg-green-600 text-white'>Uninstall</button>
+                            <button onClick={() => handleRemove(apps.id)} className='btn bg-green-600 text-white transition ease-in-out hover:opacity-70'>Uninstall</button>
                         </div>
                     </div>) : <p className='text-3xl font-bold text-center mt-5 text-gray-500'>No Apps Installed</p>
             }
+            <ToastContainer />
+
 
 
         </div>

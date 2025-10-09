@@ -33,12 +33,12 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-bold">
                         <li><NavLink to='/'>Home </NavLink></li>
-                        <li><NavLink to='/all-apps'>Apps </NavLink></li>
                         <li><NavLink to='/installation'>Installation </NavLink></li>
+                        <li><NavLink to='/all-apps'>Apps </NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='https://github.com/sabbir749' className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7'><FaGithub></FaGithub>Contribute</Link>
+                    <Link to='https://github.com/sabbir749' className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7 flex justify-center items-center transition ease-in-out hover:opacity-70 hover:scale-97'><FaGithub></FaGithub>Contribute</Link>
                 </div>
             </div>
         </div>

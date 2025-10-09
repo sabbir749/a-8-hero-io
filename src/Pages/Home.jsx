@@ -97,8 +97,8 @@ const Home = () => {
                                 }
                             </div>
                         }
-                        <div className='text-center mt-15 mx-auto'>
-                            <Link to='/all-apps' className='btn mx-auto bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7'>Show All</Link>
+                        <div className='text-center mt-15 mx-auto '>
+                            <Link to='/all-apps' className='py-2 mx-auto rounded-sm bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7 transition ease-in-out hover:opacity-70 hover:scale-x-105 inline-block'>Show All</Link>
                         </div>
 
                     </div>

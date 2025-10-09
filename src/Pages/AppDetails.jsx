@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import useApps from '../hooks/useApps';
 import download from '../assets/icon-downloads.png'
@@ -6,6 +6,7 @@ import star from '../assets/icon-ratings.png'
 import like from '../assets/icon-review.png'
 import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import Loader from '../components/Loader';
+import { ToastContainer, toast } from 'react-toastify';
 
 const AppDetails = () => {
 
@@ -14,6 +15,13 @@ const AppDetails = () => {
 
     const { apps, loading, error } = useApps()
     const app = apps.find(a => String(a.id) === id)
+    const [installed, setInstalled] = useState(false)
+
+    useEffect(() => {
+        const existingApps = JSON.parse(localStorage.getItem('InstalledApps')) || []
+        const isInstalled = existingApps.some(p => p.id === app?.id)
+        setInstalled(isInstalled)
+    }, [app])
 
 
     if (loading) {
@@ -38,7 +46,8 @@ const AppDetails = () => {
 
 
         localStorage.setItem('InstalledApps', JSON.stringify(updatedList))
-
+        setInstalled(true)
+        toast("✅ App Installed !")
     }
     //   console.log(app);
 
@@ -74,7 +83,19 @@ const AppDetails = () => {
                         </div>
 
                     </div>
-                    <button onClick={handleInstall} className='btn px-7 py-6 bg-green-600 text-white mt-6'>Install Now ({size} MB)</button>
+                    <button
+                        onClick={handleInstall}
+                        disabled={installed}
+                        className="btn px-7 py-6 mt-6 text-white 
+               bg-green-600 hover: transition ease-in-out hover:bg-green-700 hover:scale-97 
+               disabled:bg-green-300 disabled:text-gray-700 disabled:cursor-not-allowed"
+                    >
+                        {installed ? 'Installed' : `Install Now (${size} MB)`}
+                    </button>
+
+
+
+                    <ToastContainer />
                 </div>
             </div>
 
