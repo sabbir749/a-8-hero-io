@@ -5,6 +5,7 @@
     "companyName": "TechNest Inc.",
     "id": 1,
     "description": "hatly is a cutting-edge messaging app designed for seamless communication. It leverages AI-powered suggestions to help users reply quickly and accurately. The app also provides end-to-end encryption to ensure the privacy of all conversations.\n\nWith smart organization features, messages are automatically sorted and prioritized for convenience. Users can translate messages in real-time and collaborate efficiently across teams. Multi-device synchronization ensures continuity across phones, tablets, and desktops.\n\nChatly is ideal for both personal and professional communication, enhancing productivity and social interaction. Its intuitive interface allows users of all ages to navigate effortlessly. Overall, it combines security, efficiency, and innovation in one messaging platform.",
+    "size": 62,
     "reviews": 12034,
     "ratingAvg": 4.6,
     "downloads": 50,
@@ -263,7 +264,7 @@
     ]
   },
   {
-    "image": "https://i.ibb.co/FLqVPT9n/715-WP98vs-PL-UF1000-1000-QL80.jpg",
+    "image": "https://i.ibb.co/c9CsdRj/unnamed.webp",
     "title": "CookBook+",
     "companyName": "KitchenPro",
     "id": 9,
@@ -428,7 +429,7 @@
     ]
   },
   {
-    "image": "https://i.ibb.co/pjb3VycX/unnamed-1.jpg",
+    "image": "https://i.ibb.co/JwcVHhqP/unnamed-2.webp",
     "title": "HealthTrack",
     "companyName": "LifePlus",
     "id": 14,
@@ -560,7 +561,7 @@
     ]
   },
   {
-    "image": "https://i.ibb.co/bg6VjnW9/images-1.jpg",
+    "image": "https://i.ibb.co/B5DtLRrZ/unnamed-1.webp",
     "title": "Weatherly",
     "companyName": "SkyTech",
     "id": 18,
@@ -593,7 +594,7 @@
     ]
   },
   {
-    "image": "https://i.ibb.co/R4wpdP8G/unnamed-2.jpg",
+    "image": "https://i.ibb.co/jkBmRCT7/unnamed-3.webp",
     "title": "StudyBuddy",
     "companyName": "LearnEdge",
     "id": 19,
@@ -626,7 +627,7 @@
     ]
   },
   {
-    "image": "https://i.ibb.co/82KGBTH2/download.jpg",
+    "image": "https://i.ibb.co/TByfJ70W/unnamed-4.webp",
     "title": "PetPal",
     "companyName": "FurTech",
     "id": 20,

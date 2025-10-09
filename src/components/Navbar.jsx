@@ -33,8 +33,8 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-bold">
                         <li><NavLink to='/'>Home </NavLink></li>
-                        <li><NavLink to='/installation'>Installation </NavLink></li>
                         <li><NavLink to='/all-apps'>Apps </NavLink></li>
+                        <li><NavLink to='/installation'>Installation </NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
