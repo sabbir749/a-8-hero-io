@@ -5,3 +5,14 @@
 .poppins {
     font-family: "Poppins", sans-serif;
 }
+
+a.active {
+    background: linear-gradient(90deg, #632EE3, #9F62F2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, #632EE3, #cec0e0) 1;
+    border-radius: 12px;
+}

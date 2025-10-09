@@ -5,6 +5,7 @@ import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 import like from '../assets/icon-review.png'
 import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import Loader from '../components/Loader';
 
 const AppDetails = () => {
 
@@ -16,9 +17,10 @@ const AppDetails = () => {
 
 
     if (loading) {
-        return <p>Loading....</p>
+        return <Loader></Loader>
     }
     const { title, image, companyName, reviews, ratings, downloads, ratingAvg, size, description } = app
+
 
     const handleInstall = () => {
         const existingApps = JSON.parse(localStorage.getItem('InstalledApps'))
@@ -33,13 +35,13 @@ const AppDetails = () => {
         else {
             updatedList.push(app)
         }
-        
+
 
         localStorage.setItem('InstalledApps', JSON.stringify(updatedList))
 
     }
-  console.log(app);
-  
+    //   console.log(app);
+
 
 
     return (
@@ -48,7 +50,7 @@ const AppDetails = () => {
 
             <div className='flex w-10/12 justify-center md:items-center flex-col md:flex-row md:gap-12 mx-auto border-b-2 py-7 border-gray-300'>
                 <div className='md:w-1/5 md:bg-white p-6 rounded-lg'>
-                    <img className='w-[200px] h-[200px]' src={image} alt="" />
+                    <img className='w-[200px] ' src={image} alt="" />
                 </div>
 
                 <div className='w-4/5'>
@@ -82,21 +84,21 @@ const AppDetails = () => {
                 <ResponsiveContainer width="100%" height="100%">
                     <ComposedChart
                         layout="vertical"
-                        width={500}
-                        height={400}
                         data={ratings}
-
+                        margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
                     >
                         <CartesianGrid stroke="#f5f5f5" />
-                        <XAxis dataKey='count' />
-                        <YAxis dataKey='name' type="category" scale="band" />
+                        <XAxis type="number" />
+                        <YAxis dataKey="name" type="category" reversed />
+
                         <Tooltip />
                         <Legend />
-                        <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" />
-                        <Bar dataKey="count" barSize={20} fill="#3f07c7" />
-                        <Line dataKey="name" stroke="#ff7300" />
+
+                        <Bar dataKey="count" barSize={20} fill="#11AF44" />
+
                     </ComposedChart>
                 </ResponsiveContainer>
+
             </div>
 
             <div className='my-10 container mx-auto px-3'>

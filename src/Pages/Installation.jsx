@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
+import useApps from '../hooks/useApps';
+import Loader from '../components/Loader';
 
 const Installation = () => {
 
+    const { apps, loading } = useApps()
     const [installedAppsList, setInstalledAppsList] = useState([])
     const [sortApps, setSortApps] = useState('none')
 
@@ -16,9 +19,9 @@ const Installation = () => {
 
     const sortedItem = () => {
         if (sortApps === 'size-asc') {
-            return [...installedAppsList].sort((a, b) => a.size - b.size)
+            return [...installedAppsList].sort((a, b) => a.downloads - b.downloads)
         } else if (sortApps === 'size-desc') {
-            return [...installedAppsList].sort((a, b) => b.size - a.size)
+            return [...installedAppsList].sort((a, b) => b.downloads - a.downloads)
         } else {
             return installedAppsList
         }
@@ -46,7 +49,7 @@ const Installation = () => {
                 <div className='flex justify-center w-full px-3 flex-col md:flex-row items-center md:justify-between gap-3 my-6'>
                     <p className='font-bold text-xl'>({installedAppsList.length}) Apps Found</p>
                     <select value={sortApps} onChange={e => setSortApps(e.target.value)} className="select">
-                        <option disabled={true} value='none'>Sort by Size</option>
+                        <option disabled={true} value='none'>Sort by Download</option>
                         <option value='size-asc'>Low-High</option>
                         <option value='size-desc'>High-Low</option>
 
@@ -59,7 +62,7 @@ const Installation = () => {
 
 
             {
-                sortedItem().length > 0 ?
+                loading ? <Loader /> : sortedItem().length > 0 ?
                     sortedItem().map(apps => <div key={apps.id} className='flex justify-between items-center mx-3 rounded-lg mb-3 bg-white p-4'>
                         <div className='flex gap-4'>
                             <div className='bg-gray-200 rounded-lg p-3 w-[60px]'>
@@ -77,7 +80,7 @@ const Installation = () => {
                         <div>
                             <button onClick={() => handleRemove(apps.id)} className='btn bg-green-600 text-white'>Uninstall</button>
                         </div>
-                    </div>):<p className='text-3xl font-bold text-center mt-5 text-gray-500'>No Apps Installed</p>
+                    </div>) : <p className='text-3xl font-bold text-center mt-5 text-gray-500'>No Apps Installed</p>
             }
 
 

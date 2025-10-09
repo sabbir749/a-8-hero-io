@@ -1,10 +1,17 @@
 import React from "react";
-import { DnaSpinner } from "react-awesome-components";
+import { DNA } from "react-loader-spinner";
 
 const Loader = () => {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <DnaSpinner size={80} color="#632EE3" />
+        <div className="flex justify-center h-screen bg-gray-100">
+            <DNA
+                visible={true}
+                height="120"
+                width="120"
+                ariaLabel="dna-loading"
+                wrapperStyle={{}}
+                wrapperClass="dna-wrapper"
+            />
         </div>
     );
 };

@@ -7,12 +7,13 @@ import Installation from '../Pages/Installation';
 import AllApps from '../Pages/AllApps';
 import AppDetails from '../Pages/AppDetails';
 import AppsError from '../Pages/AppsError';
+import Loader from '../components/Loader';
 
 const router = createBrowserRouter([
     {
         path: '/',
         Component: MainLayout,
-        hydrateFallbackElement: <p>Loading...</p>,
+        hydrateFallbackElement: <Loader/>,
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {

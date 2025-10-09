@@ -12,6 +12,7 @@ import ellipse6 from '../assets/Ellipse 29.png'
 
 import Apps from './Apps';
 import useApps from '../hooks/useApps';
+import Loader from '../components/Loader';
 
 
 
@@ -88,12 +89,14 @@ const Home = () => {
                             <p className='text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
                         </div>
                         {/* Dynamic part */}
-                        <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
+                        {
+                            loading ? <Loader></Loader> : <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
 
-                            {
-                                allApps.map(appData => <Apps appData={appData} key={appData.id}></Apps>)
-                            }
-                        </div>
+                                {
+                                    allApps.map(appData => <Apps appData={appData} key={appData.id}></Apps>)
+                                }
+                            </div>
+                        }
                         <div className='text-center mt-15 mx-auto'>
                             <Link to='/all-apps' className='btn mx-auto bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-7'>Show All</Link>
                         </div>

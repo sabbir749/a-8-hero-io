@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import useApps from '../hooks/useApps';
 import Apps from './Apps';
 import AppsError from './AppsError';
+import ErrorPage from './ErrorPage';
+import Loader from '../components/Loader';
 
 
 const AllApps = () => {
 
-    const { apps } = useApps()
+    const { apps,loading } = useApps()
     const [search, setSearch] = useState('')
 
     const term = search.trim().toLocaleLowerCase()
@@ -42,12 +44,14 @@ const AllApps = () => {
                 </label>
             </div>
 
-            <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
-                {
-                    searchedApps.length > 0 ?
-                        searchedApps.map(appData => <Apps appData={appData} key={appData.id}></Apps>) : <p className='font-black text-4xl text-center col-span-4'>Not Found</p>
-                }
-            </div>
+            {
+                loading ? <Loader></Loader> : <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
+                    {
+                        searchedApps.length > 0 ?
+                            searchedApps.map(appData => <Apps appData={appData} key={appData.id}></Apps>) : <div className='col-span-4'><AppsError></AppsError></div>
+                    }
+                </div>
+            }
         </div>
     );
 };
