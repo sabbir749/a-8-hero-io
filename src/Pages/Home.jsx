@@ -37,10 +37,10 @@ const Home = () => {
                     </div>
                     <p className='text-gray-500 mt-5 max-w-[800px] text-center mb-10'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                     <div className='mb-10'>
-                        <Link to='https://play.google.com/store/games?hl=en' className='btn border-gray-400 py-6 px-5'>
+                        <Link to='https://play.google.com/store/games?hl=en' className='btn border-gray-400 py-6 px-5 transition ease-in-out hover:opacity-90 hover:scale-97'>
                             <img src={playStore} alt="" />
                             Google Play</Link>
-                        <Link to='https://www.apple.com/app-store/' className='btn border-gray-400 px-5 py-6 ml-4'>
+                        <Link to='https://www.apple.com/app-store/' className='btn border-gray-400 px-5 py-6 ml-4 transition ease-in-out hover:opacity-90 hover:scale-97'>
                             <img src={appStore} alt="" />
                             App Store</Link>
                     </div>
