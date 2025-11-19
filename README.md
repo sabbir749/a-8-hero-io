@@ -23,7 +23,9 @@ Authentication: Firebase, JWT
 
 Deployment: netlify
 
+# Screenshot
 
+<img src="/hero-io.PNG" alt="Banner image">
 
 
 ## Contact 📬
