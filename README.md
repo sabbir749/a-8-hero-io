@@ -1,5 +1,3 @@
-Technologies: HTML, CSS, Tailwind, Javascript, React, DaisyUI, Rechart, Toastify
-
 # Project Name: 
 
 __HERO.IO__
@@ -19,7 +17,7 @@ Site Link: https://8-hero-io.netlify.app/
 # Tech Stack 🛠️ 
 
 
-Frontend: Html, Css, Javascript, React.js
+Frontend: Html, Css, Javascript, React.js, Tailwind, DaisyUI, Rechart, Toastify
 
 Authentication: Firebase, JWT
 
