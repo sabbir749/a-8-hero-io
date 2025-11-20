@@ -2,7 +2,7 @@
 
 __HERO.IO__
 
-Site Link: https://8-hero-io.netlify.app/
+Site Link: https://hero-app-in.netlify.app/
 
  At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
 
